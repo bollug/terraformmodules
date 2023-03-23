@@ -1,0 +1,20 @@
+https://spacelift.io/blog/terraform-aws-vpc --------------multiple subnets using count
+https://stackoverflow.com/questions/57007104/creating-multiple-subnets-per-availability-zone-using-terraform
+https://cloudcasts.io/course/terraform/creating-our-vpc-module----------------creating multiplesubnets using foreach
+
+----------------------------------
+EC2.....
+https://linuxhint.com/ec2-instance-aws-terraform/
+https://stackoverflow.com/questions/52074138/how-to-use-the-vpc-id-and-subnets-id-values-which-were-created-from-one-terrafor-------------for listing vpc and suubnets based on filters
+----------------------------
+EB.............
+https://blog.knoldus.com/deploying-elasticbeanstalk-using-terraform/
+https://github.com/BasileTrujillo/terraform-elastic-beanstalk-nodejs/blob/master/eb-env/main.tf
+https://github.com/scalereal/terraform-aws-elastic-beanstalk-environment/blob/master/main.tf
+https://automateinfra.com/2021/03/24/how-to-launch-aws-elastic-beanstalk-using-terraform/
+https://tech.ovoenergy.com/aws-elasticbeanstalk-terraform/
+https://github.com/cloudposse/terraform-aws-elastic-beanstalk-environment
+https://stackoverflow.com/questions/62328683/how-to-retrieve-a-secret-in-terraform-from-aws-secret-manager-------------------db from secretmmanager
+https://github.com/aws-samples/aws-codepipeline-terraform-cicd-samples ..........................codeipeline
+https://livebook.manning.com/book/terraform-in-action/chapter-11/v-9/99---------------------------------------skipping buildstage in codepipeline
+https://github.com/umotif-public/terraform-aws-ecs-fargate/blob/master/main.tf...................................ecs fargate creation

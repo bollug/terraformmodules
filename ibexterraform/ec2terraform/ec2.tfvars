@@ -1,0 +1,6 @@
+region                 = "ap-northeast-1"
+instance_type          = "t2.micro"
+sg                     = "myec2sg"
+vpcname                = "Project_Name-A"
+subnetname             = "Public Subnet 1"
+keypairname            = "terraform"

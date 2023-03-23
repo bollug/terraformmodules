@@ -1,0 +1,33 @@
+terraform apply --vars.file "variables.tfvars" ................inputs for variables ffor template reuse to change cidrs......withoutmodules
+terraform apply  -var-file="module.tfvars" ........................inside modules 
+terraform plan -var-file="module.tfvars" .............................inside mmodules
+--------------------------------------------------
+VPC:
+to output multiple subnets:
+output "public_subnet_ids" {
+  description = "IDs of the created public subnets"
+  value       = aws_subnet.public_subnets.*.id
+}
+to output single subnet from multiple subnets using condition
+output "private_subnet_id" {
+  value = length(aws_subnet.private_subnet) > 0 ? aws_subnet.private_subnet[0] : null
+}
+to output single subnets from multiple subnet creation wwithout condition
+
+output "private_subnet_id1" {
+  value = element(aws_subnet.private_subnets.*.id, 1)
+}
+
+
+output "private_subnet_id2" {
+  value = element(aws_subnet.private_subnets.*.id, 2)
+}
+
+
+output "private_subnet_id3" {
+  value = element(aws_subnet.private_subnets.*.id, 3)
+
+}
+---------------------------------------------------------------
+deploying modules in multistage and applying to specific target
+
